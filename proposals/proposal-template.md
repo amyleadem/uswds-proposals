@@ -2,8 +2,13 @@
 Welcome! Thank you for contributing to the U.S. Web Design System.
 Your contributions are vital to our success and we are glad you want to share your ideas.
 
-You can find full instructions for creating a proposal in the uswds-proposals repo:
-https://github.com/amyleadem/uswds-proposals/edit/add-readme-and-template/README.md#submitting-a-new-proposal
+A few things to remember when filling out the template: 
+- An asterisk (*) indicates a required field. 
+- You must complete all required fields before your proposal can be considered for the Design System.
+  However, to initially submit a proposal you must only complete the “Summary” and “Motivation” sections. 
+  You or someone else can finish the rest later.
+- You can find full instructions for creating a proposal in the uswds-proposals repo:
+  https://github.com/amyleadem/uswds-proposals/blob/add-readme-and-template/proposals/proposal-template.md
 
 More information about contributing to USWDS can be found on the contribution page:
 https://designsystem.digital.gov/about/contribute/
