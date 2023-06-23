@@ -22,8 +22,8 @@ _Provide a short paragraph or bulleted list that gives an overview of the propos
 
 _Explain why we should include this component in USWDS._
 
-1. _What user need does this component address?_
-1. _What problem does this component solve?_
+- _What user need does this component address?_
+- _What problem does this component solve?_
 
 ## Proposed solution*
 
