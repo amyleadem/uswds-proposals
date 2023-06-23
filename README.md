@@ -7,13 +7,13 @@
 
 This repo acts as a public hub to submit and discuss proposals for new U.S. Web Design System (USWDS) components.
 
-## About
+## Overview of the proposal process
 
 All requests for new USWDS components must be submitted as a proposal. Proposals are detailed documents that should make a compelling case for adding a new component to the Design System.
 
 Anyone can submit or contribute to a proposal. Community contribution is at the heart of this process and we encourage you to share your ideas, opinions, and votes.
 
-### Contribution
+### Ways to contribute
 
 The proposal process exists to help the USWDS team better understand community interest in new component ideas. Your opinions matter, and we want to make it easy for you to contribute.
 
@@ -25,7 +25,7 @@ To help guide you through the process, we provide the following resources:
 - [Information about our evaluation process](#proposal-evaluation)
 - [Roles and responsibilities](#roles-and-responsibilities)
 
-#### Contribution support
+#### Help with GitHub
 
 This process requires a knowledge of GitHub [branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) and [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). If you need help submitting or contributing to a proposal, please reach out via [TK].
 
