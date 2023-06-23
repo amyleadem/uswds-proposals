@@ -22,8 +22,8 @@ _Provide a short paragraph or bulleted list that gives an overview of the propos
 
 _Explain why we should include this component in USWDS._
 
-- _What user need does this component address?_
-- _What problem does this component solve?_
+1. _What user need does this component address?_
+1. _What problem does this component solve?_
 
 ## Proposed solution*
 
@@ -106,7 +106,7 @@ _List any resources used to help create this proposal._
 
 ## Community support (Optional)
 
-_If there are any volunteers who are willing to help design, develop, or test this component, tag them here._
+_If there are any volunteers who are willing to help design, develop, or test this component, tag them here with details about their roles._
 
 ## Endorsements and stakeholders (Optional)
 
