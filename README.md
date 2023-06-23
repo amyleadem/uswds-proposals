@@ -3,7 +3,7 @@
 > **Note**
 > At this time, we are accepting proposals only for new components. 
 >
-> You can [submit requests for new features or enhancements](https://github.com/uswds/uswds/issues/new/choose) by creating an issue in the uswds repo.
+> You can submit requests for new features or enhancements by [creating an issue](https://github.com/uswds/uswds/issues/new/choose) in the uswds repo.
 
 This repo acts as a public hub to submit and discuss proposals for new U.S. Web Design System (USWDS) components.
 
@@ -21,9 +21,10 @@ To help guide you through the process, we provide the following resources:
 
 - [Instructions for submitting a new proposal](#submitting-a-new-proposal)
 - [Instructions for contributing to an existing proposal](#contributing-to-an-existing-proposal)
-- [A proposal template](https://github.com/amyleadem/uswds-proposals/blob/main/proposals/_proposal-template.md)
 - [Information about our evaluation process](#proposal-evaluation)
-- [Roles and responsibilities](#roles-and-responsibilities)
+- [Information about roles and responsibilities](#roles-and-responsibilities)
+- [A proposal template](https://github.com/amyleadem/uswds-proposals/blob/main/proposals/_proposal-template.md)
+
 
 #### Help with GitHub
 
