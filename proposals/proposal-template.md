@@ -65,8 +65,11 @@ Consider the following:
 _Add details about how this plan should be implemented._
 
 - _Will the component be implemented in phases?_
+<!-- If so, what does the initial release look like and what are the follow-up versions? -->
 - _Are there any potential blockers?_
+<!-- For example: time limits, technological blockers, etc --> 
 - _Are there any dependencies?_
+<!-- For example: waiting for a major version release, another component to be released first, etc -->
 
 ### Testing plan*
 _Explain how to test this component._
