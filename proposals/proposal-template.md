@@ -1,11 +1,11 @@
 <!---
 Welcome! Thank you for contributing to the U.S. Web Design System.
-Your contributions are vital to our success and we are glad you want to share your ideas.
+Your contributions are vital to our success and we are glad you're here to share your ideas.
 
-A few things to remember when filling out the template: 
-- An asterisk (*) indicates a required field. 
+A few things to remember when filling out the template:
+- An asterisk (*) indicates a required field.
 - You must complete all required fields before your proposal can be considered for the Design System.
-  However, to initially submit a proposal you must only complete the “Summary” and “Motivation” sections. 
+  However, to initially submit a proposal you must only complete [TK].
   You or someone else can finish the rest later.
 - You can find full instructions for creating a proposal in the uswds-proposals repo:
   https://github.com/amyleadem/uswds-proposals/blob/add-readme-and-template/proposals/proposal-template.md
@@ -14,107 +14,105 @@ More information about contributing to USWDS can be found on the contribution pa
 https://designsystem.digital.gov/about/contribute/
  -->
 
-## Summary*
+## About this component
 
-_Provide a short paragraph or bulleted list that gives an overview of the proposed component._
+### Component name
 
-## Motivation*
+_Provide the potential name (or names) for this component._
+- _Does this component have a common name?_
+- _Are there other existing names for this component?_
 
-_Explain why we should include this component in USWDS._
+### Description
 
+_Provide a short description of the component and what it does._
+
+### Problem statement
+
+_Explain the need for this component._
 - _What user need does this component address?_
 - _What problem does this component solve?_
 
-## Proposed solution*
+### Related laws or policies
 
-_Thoroughly describe the proposed component. Use the following sections to add detail:_
+_Share if there are there are any laws or policies that this component directly supports._
 
-### Functionality*
+### Proposed solution
 
-_Describe the component's core functionality. If the component is dynamic, describe its interactive states._
+_Thoroughly describe the component and how it addresses the issues outlined in the problem statement._ 
+- _Add diagrams, images, and/or wireframes that visually demonstrate the component._
+- _Describe the component's core functionality. If the component is dynamic, describe its interactive states._
+- _Identify any proposed variants for this component._
 
-### Visuals*
+### Implementation examples
 
-_Add diagrams, images, and/or wireframes that visually demonstrate this component._
+_Provide a list of examples of this component on government (preferred) or non-government sites._
 
-### Variants*
+### Related components
 
-_Describe any variants planned for this component._
+_Identify if this component is connected to other USWDS components._
+- _Does this component require any other USWDS component to support its common interactions?_
+- _Would this component affect or replace any other USWDS components?_
+  
+### Supporting evidence
 
-### Settings*
+_Provide links to research findings or evidence that support the need for this component._
 
-_Describe which component elements should be customizable with theme settings._
+### Alternatives
 
-### Accessibility*
+_Share any alternatives to this component and explain their advantages and disadvantages._
+- _Why is this component the most effective solution?_
+- _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
-_Identify any accessibility considerations._
+## Usage
 
-- _Will the component be compatible with assistive technologies?_
-<!-- 
-Consider the following:
-- Keyboard-only interaction
-- Screen readers
-- Voice command
-- High-contrast mode
-- Zoom magnification 
--->
+### When to use this component
+
+_Define the appropriate use case for this component._
+- _What common patterns or interactions does this component support?_
+
+### When to consider a different component
+
+_Identify the scenarios where this component would not be the appropriate choice._
+- _What other USWDS components might better support these interactions instead?_
+- _What are common misuses of this type of component?_
+
+## Usability and accessibility
+
+### Key usability considerations
+- _What does this component need to do to be successful and effective?_
+- _What are the characteristics of a successful interaction with this component?_
+- _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
+
+### Common usability issues
+- _What would make this component less usable?_
+- _What are common pitfalls or implementation mistakes associated with this component?_
+- _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
+
+### Risks and potential harm
 - _Are there any audiences that might struggle with this component?_
-<!--Explain how this component will accommodate these needs.-->
+- _Are there any reasons we should not develop this component?_
+- _How might this component be misused?_
+- _Is this component inaccessible to any assistive technologies? (keyboard navigation, screen readers, zoom magnification, voice command, etc)_
+- _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
-### Implementation plan*
-_Add details about how this plan should be implemented._
+## Stakeholders
 
-- _Will the component be implemented in phases?_
-<!-- If so, what does the initial release look like and what are the follow-up versions? -->
-- _Are there any potential blockers?_
-<!-- For example: time limits, technological blockers, etc --> 
-- _Are there any dependencies?_
-<!-- For example: waiting for a major version release, another component to be released first, etc -->
+### Key audiences
 
-### Testing plan*
-_Explain how to test this component._
+_Identify if there are any audiences that have a unique interest in this component._
+- _Which audience is best able to determine if this component is successful?_
 
-- _What kinds of tests will need to be performed?_
-- _Which elements or interactions will need to be tested?_
-- _Are there any specific audiences that should be included in user testing?_
+### Endorsements
 
-### Documentation*
+_If there is significant support from a given agency or group, include their names here and tag any stakeholders._
 
-_Identify any documentation update requirements._
-<!-- Note: all new components will need a component page. -->
-
-## Supporting evidence*
-
-_Provide links to any compelling research or other findings that support this proposal._
-
-## Potential drawbacks and alternatives considered*
-
-_Share any reasons we should NOT pursue this proposal._
-
-- _How does the estimated level of effort compare with the expected benefit?_
-- _Are there any audiences that might find it difficult to use this component?_
-- _Are there any complications with using assistive technologies?_
-
-_Explain which alternatives you have considered and explain their advantages and disadvantages._
-
-- _Why did you choose the proposed solution over other possibilities?_
-
-## Unknowns*
-
-_Identify any questions that need to be answered before approving this proposal._
-
-## References (Optional)
-
-_List any resources used to help create this proposal._
-
-## Community support (Optional)
-
+### Volunteers
 _If there are any volunteers who are willing to help design, develop, or test this component, tag them here with details about their roles._
 
-## Endorsements and stakeholders (Optional)
+### Contributors
 
-_If there is significant support from a given agency or group, include their name(s) here and tag any stakeholders._
+_Add your name or GitHub username if you contributed to this proposal._
 
-## Acknowledgements (Optional)
+### Acknowledgements
 
 _Thank those who have helped carry out this research and work._
