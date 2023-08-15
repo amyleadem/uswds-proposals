@@ -26,7 +26,7 @@ _Provide the potential name (or names) for this component._
 
 _Provide a short description of the component and what it does._
 
-### Problem statement
+### Reasoning
 
 _Explain the need for this component._
 - _What user need does this component address?_
