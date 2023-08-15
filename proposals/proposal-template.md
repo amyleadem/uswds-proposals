@@ -30,7 +30,9 @@ _Provide a short description of the component and what it does._
 
 _Explain the need for this component._
 - _What user need does this component address?_
+- _What gap does this component fill in the Design System?_
 - _What problem does this component solve?_
+
 
 ### Related laws or policies
 
