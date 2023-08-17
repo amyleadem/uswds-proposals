@@ -1,6 +1,6 @@
 <!---
 Welcome! Thank you for contributing to the U.S. Web Design System.
-Your contributions are vital to our success and we are glad you're here to share your ideas.
+Your contributions are vital to our success.
 
 A few things to remember when filling out the template:
 - An asterisk (*) indicates a required field.
@@ -24,13 +24,15 @@ _Provide the potential name (or names) for this component._
 
 ### Description
 
-_Provide a short description of the component and what it does._
+_Provide a one- or two-sentence description of the component._
 
-### Problem statement
+### Reasoning
 
 _Explain the need for this component._
 - _What user need does this component address?_
+- _What gap does this component fill in the Design System?_
 - _What problem does this component solve?_
+
 
 ### Related laws or policies
 
@@ -47,19 +49,20 @@ _Thoroughly describe the component and how it addresses the issues outlined in t
 
 _Provide a list of examples of this component on government (preferred) or non-government sites._
 
-### Dependencies
+### Related USWDS components
 
 _Identify if this component is connected to other USWDS components._
-- _Are there any other components that this component requires to support its common interactions?_
-- _Are there any other components that this component would affect or replace?_
+- _Does this component require any other USWDS component to support its common interactions?_
+- _Would this component affect or replace any other USWDS components?_
+
 ### Supporting evidence
 
-_When possible, provide links to research findings or evidence that support the value of this component._
+_Provide links to research findings or evidence that support the need for this component._
 
 ### Alternatives
 
-_Share any alternatives to this component and explain their advantages and disadvantages._
-- _Why is this component the most effective solution?_
+_Share any alternatives to this component that you considered and explain their advantages and disadvantages._
+- _Why is the proposed component the most effective solution?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
 ## Usage
@@ -71,42 +74,45 @@ _Define the appropriate use case for this component._
 
 ### When to consider a different component
 
-_Identify scenarios when this component would not be the appropriate choice._
-- _Where other components might support these interactions instead?_
+_Identify the scenarios where this component would not be the appropriate choice._
+- _What other USWDS components might better support these interactions instead?_
 - _What are common misuses of this type of component?_
 
 ## Usability and accessibility
 
-### Key considerations
+### Key usability considerations
+_Describe a successful interaction with this component._
 - _What does this component need to do to be successful and effective?_
 - _What are the characteristics of a successful interaction with this component?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
-### Common issues
+### Common usability issues
+_Describe an unsuccessful interaction with this component._
 - _What would make this component less usable?_
 - _What are common pitfalls or implementation mistakes associated with this component?_
+- _How might this component be misused?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
 ### Risks and potential harm
+_Describe the any potential harm that could be caused by this component._
 - _Are there any audiences that might struggle with this component?_
+- _Will users of assistive technologies struggle with this component? List any potential risks for users of keyboard navigation, screen readers, zoom magnification, voice command, etc._
 - _Are there any reasons we should not develop this component?_
-- _How might this component be misused?_
-- _Is this component incompatible with any assistive technologies? (keyboard navigation, screen readers, zoom magnification, voice command, etc)_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
 ## Stakeholders
 
 ### Key audiences
 
-_Identify if there are any audiences that have a unique interest in this component._
-- _Are there key audiences associated with this component?_
-- _What audience is best able to determine if this component is successful?_
+_Identify if there are any audiences that have a special interest in this component._
+- _Which audience is best able to determine if this component is successful?_
 
 ### Endorsements
 
 _If there is significant support from a given agency or group, include their names here and tag any stakeholders._
 
 ### Volunteers
+
 _If there are any volunteers who are willing to help design, develop, or test this component, tag them here with details about their roles._
 
 ### Contributors
