@@ -9,11 +9,14 @@ Tabs
 Tabs allow users to stay in place while navigating through individual sections of related content. 
 
 ### Problem statement
-Similar to tabs, the USWDS accordion component gives users the ability to hide and show individual sections of related content. However it does not meet the following needs:
+The U.S. Web Design System does not currently offer users the ability to show and hide groups of content without changing location on the page. 
+
+USWDS does offer the accordion component, which also shows and hides groups of content. However the accordion does not fill the following gaps:
+
 - **Horizontal grouping of related information.** While an Accordion offers vertical grouping of content that allows more than one group of content to be opened at once, a tabs component can offer horizontal grouping.
 - **Navigate groups of content without changing location**. Unlike accordion, tabs offers users the ability stay in place while alternating between two or more groups of related content.
 
-Additionally, tabs are a familiar user pattern that is not currently present in USWDS. Jakob’s Law of UX states: “Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.” Offering a USWDS tabs component would provide the following benefits:
+Additionally, tabs are a familiar user pattern that teams are spending time developing. Jakob’s Law of UX states: “Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.” Offering a USWDS tabs component would provide the following benefits:
 
 - **Save time and money across projects.** Because this is such a familiar and in-demand component, developers across federal agencies are spending time building custom implementations of the tabs component. Development could be streamlined by introducing a USWDS implementation. 
 - **USWDS can provide guidance for this common pattern.** Additionally, USWDS will be able to provide guidance on when builders should use tabs, when to consider something else, and additional support by including a component overview page as seen with other components within the library. To help facilitate the introduction of this tabs component, we have included a draft of what may be included in a tabs overview page in this proposal. (See Tabs – Component overview.jpg.zip).
