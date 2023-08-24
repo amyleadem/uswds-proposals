@@ -152,9 +152,8 @@ _Share any alternatives to this component and explain their advantages and disad
 - _Why is this component the most effective solution?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._-->
 
-## Usage
 
-### When to use this component
+## When to use this component
 <!--
 _Define the appropriate use case for this component._
 _What common patterns or interactions does this component support?_
@@ -166,7 +165,7 @@ _What common patterns or interactions does this component support?_
 
 More information can be found in the [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)
 
-### When to consider a different component
+## When to consider a different component
 - **If you are organizing a large amount of unrelated content.**
 - **If your content is highly interactive.** It is not recommended to place other highly interactive components within a tab, or components that are task-driven like forms, data entry, or page-level alerts. For instance, adding an accordion inside of a tab’s content should be avoided. [Need source/research]
 - **If you need site navigation.** Avoid using tabs as navigation to other pages. Instead, use the header component.
@@ -175,7 +174,7 @@ More information can be found in the [Tabs – Component overview.jpg.zip](http
 - **If more than three tabs are needed.** Consider using an accordion when more than a few tabs will be required. This eliminates the need for horizontal scrolling, which can lead to a poor experience for uses of assistive technologies. [Need source/research]
 - **If you need more than one group of hidden content on a page.** In this scenario, consider the accordion component instead. [Need source/research]
 
-### Implementation guidance
+## Implementation guidance
 
 - **Provide informative tab labels.** Help users understand what they are opening.
 - **Be strategic when grouping content.** Only use tabs that are similar when it comes to the meaning of the page.
@@ -188,12 +187,12 @@ More information can be found in the [Tabs – Component overview.jpg.zip](http
 - **Place tabs at the top of the module or element where the content is being grouped.** Fix to top of viewport as necessary. [Need source/research]
 - **If the number of content items inside a tab is relevant, indicate the number with parentheses.** If tabs are being used to display contnet that is grouped into numerical data sets, it may be helpful to indicate to the user the number of data sets within each tab. [Need source/research]
 
-### Accessibility guidance
+## Accessibility guidance
 - **Preserve tab order.** Tabs should be navigable by keyboard in the order they appear in the visual layout.
 - **Identify when the tab content is active.** Use an `aria-label` to indicate when the content is selected. [Technique needs validation]
 - **Design your content with assistive technologies in mind.** Consider the experience of using this component on screen readers, voice command, and with zoom magnification.
 
-### Accessibility considerations
+## Accessibility considerations
 - JAWS and NVDA users find it helpful if all expandable components like accordions and tabs announce their element type (with descriptive naming conventions that allude to the content nested inside of them) to save confusion and enable the element to be predictable, and understood.
 - The component should be fully navigable by keyboard.
 - Aria-label for screen reader to indicate each tab is a ‘tab panel’, and its name [Need source/research]
@@ -214,7 +213,7 @@ More information can be found in the [Tabs – Component overview.jpg.zip](http
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 -->
 
-### Risks and potential harm
+## Risks and potential harm
 <!--
 _Describe the any potential harm that could be caused by this component._
 - _Are there any audiences that might struggle with this component?_
@@ -223,16 +222,16 @@ _Describe the any potential harm that could be caused by this component._
 - _Is this component inaccessible to any assistive technologies? (keyboard navigation, screen readers, zoom magnification, voice command, etc)_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._-->
 
-#### Usability risks
+### Usability risks
 - **Users might not find content inside of tabs.** Tabs hide content from users, which introduces the risk that users might not notice or read all of the included content.
 - **Searching for content can be difficult.** While content nested within tabs can be found in most search engine results, finding this content within a page using keyboard find functionality can prove difficult for some users. This complexity can be alleviated with an in-page search present on pages with tabs that users can use to search for content that may be behind components like an ‘accordion’ or ‘tab’.
 - **Tabs add an extra click.** If you know your users will want to see the content, don't hide it behind a tab.
 
-#### Implementation risks
+### Implementation risks
 - **A team may mistakenly use tabs as a means to compare content between tabs.** [Need source/research]
 - **A team may mistakenly use tabs as a means of site-level navigation.** Tabs should be used only for relating relative content within a page or module.
 
-#### Accessibility risks
+### Accessibility risks
 - **Content can be cut off at high magnification.** For low-vision users who require a zoom up to 400%, some tabs would appear off-screen even at large viewports, rendering the component unusable. To address this, we implemented a horizontal scroll and ultimately wrapped tab items in divs top to bottom to provide an experience that was more consistent than what we were able to achieve using list items within lists.
 
 ## Stakeholders
