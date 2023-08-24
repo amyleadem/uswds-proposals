@@ -80,10 +80,6 @@ Displayed when a user is hovering over the selection area. Here is some example 
 - Tabs to the side 
 - Tabs on top
 
-### Additional context
-[Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)
-[Tabs – Design Demo.fig.zip](https://github.com/uswds/uswds/files/8861618/Tabs.Design.Demo.fig.zip)
-
 ### Implementation examples
 
  - [GOV.UK design system tabs component](https://design-system.service.gov.uk/components/tabs/)
@@ -106,32 +102,38 @@ _Share any alternatives to this component and explain their advantages and disad
 
 ### When to use this component
 
-- If you need to organize and group different blocks of content.
-- If you are adding a small to moderate amount of content within tabs.
-- If your use case involves a user needing to digest smaller amounts of information at one time, use tabs.
+- **If you want to group together related information on the same page.** Tabs allow users to navigate through related groups of content without leaving the current page.
+- **If you are adding a small to moderate amount of content within tabs.**
+- **If your users would benefit from digesting smaller amounts of information at a time.**
+
+- More information can be found in the [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)
 
 ### When to consider a different component
-
-- If you are organizing a large amount of disparate content.
-- If you need more than one group of hidden content on a page to display at once, consider the ‘Accordion’ component instead.
-- If your use case involves building a FAQ or different blocks of content that may need to be shown at one time, use the 'Accordion' component.
+- **If you need site navigation.** Avoid using tabs as navigation to other pages. Instead, use the header component.
+- **If more than three tabs are needed.** Consider using an accordion when more than a few tabs will be required. This eliminates the need for horizontal scrolling, which can lead to a poor experience for uses of assistive technologies. 
+- **If you are organizing a large amount of disparate content.** 
+- **If you need more than one group of hidden content on a page.** In this scenario, consider the accordion component instead.
+- **If you need to show mopre than one hidden section at a time.** Instead, use the accordion component.
 
 ## Usability and accessibility
 
+#### Implementation guidance
+
+- **Do not use all caps for tabs labels.** Using caps will shorten your available horizontal space and will demand too much attention from the user.
+- **Be strategic when grouping content.** Only use tabs that are similar when it comes to the meaning of the page.
+- **Limit label to few words.** Tab labels should allude to content nested within tab as concisely as possible.
+- **Allow entire tab area to be selectable** Allow users to click or tap anywhere in the label area to open a tab and view its content.
+- **Enable horizontal scrolling.** This allows content to be accessible in limited horizontal viewports.
+- **Do not use favicon or icons in tabs.** 
+- **Use similar punctuation between each tab.**
+- **Place tabs at the top of the module or element where the content is being grouped.** Fix to top of viewport as necessary.
+- **If the number of content items inside a tab is relevant, indicate the number with parentheses.** If tabs are being used to display contnet that is grouped into numerical data sets, it may be helpful to indicate to the user the number of data sets within each tab. 
+  
 ### Key usability considerations
 
 - _What does this component need to do to be successful and effective?_
 - _What are the characteristics of a successful interaction with this component?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
-
-#### Implementation guidance
-
-- **Limit label to few words.** Tab labels should allude to content nested within tab as concisely as possible.
-- **Allow entire tab area to be selectable** Allow users to click or tap anywhere in the label area to open a tab and view its content.
-- Enable accessible horizontal scrolling in a single row to accommodate limited horizontal viewports.
-- Place tabs at the top of the module or element where the content is being grouped. Fix to top of viewport as necessary.
-- Do not use favicon or icons in tabs.
-- Use similar punctuation between each tab.
 
 #### Ideal component content
 
@@ -165,9 +167,11 @@ _Share any alternatives to this component and explain their advantages and disad
 
 ### Accessibility considerations
 
+- **Preserve tab order.** Tabs should read out in the order they appear in the visual layout.
+- **Provide informative tab labels.**
+- **Label when the tab content is active.** Use an `aria-label` to indicate when the content is selected. 
 - Tabbing to highlight active state
 - Aria-label for screen reader to indicate each tab is a ‘tab panel’, and its name
-- Aria-label indicates if currently selected is the ‘active tab panel’
 - Keyboard interaction: Pressing Enter select the active, highlighted tab panel
 - Arrow key tab functionality
 - Hover state used as a signifier
