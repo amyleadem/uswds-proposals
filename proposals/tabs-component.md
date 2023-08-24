@@ -1,19 +1,3 @@
-<!---
-Welcome! Thank you for contributing to the U.S. Web Design System.
-Your contributions are vital to our success and we are glad you're here to share your ideas.
-
-A few things to remember when filling out the template:
-- An asterisk (*) indicates a required field.
-- You must complete all required fields before your proposal can be considered for the Design System.
-  However, to initially submit a proposal you must only complete [TK].
-  You or someone else can finish the rest later.
-- You can find full instructions for creating a proposal in the uswds-proposals repo:
-  https://github.com/amyleadem/uswds-proposals/blob/add-readme-and-template/proposals/proposal-template.md
-
-More information about contributing to USWDS can be found on the contribution page:
-https://designsystem.digital.gov/about/contribute/
- -->
-
 ## About this component
 
 ### Component name
@@ -22,21 +6,18 @@ Tabs
 
 ### Description
 
-The tabs component lets users navigate between related sections of content, displaying one section at a time.
+Tabs allow users to stay in place while navigating through individual sections of related content. 
 
 ### Problem statement
+Similar to tabs, the USWDS accordion component gives users the ability to hide and show individual sections of related content. However it does not meet the following needs:
+- **Horizontal grouping of related information.** While an Accordion offers vertical grouping of content that allows more than one group of content to be opened at once, a tabs component can offer horizontal grouping.
+- **Navigate groups of content without changing location**. Unlike accordion, tabs offers users the ability stay in place while alternating between two or more groups of related content.
 
-_Explain the need for this component._
-- _What user need does this component address?_
-- _What problem does this component solve?_
-- _What gap does this component fill in the design system?_
+Additionally, tabs are a familiar user pattern that is not currently present in USWDS. Jakob’s Law of UX states: “Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.” Offering a USWDS tabs component would provide the following benefits:
 
-Tabs are a familiar user pattern that allow users to stay in place
+- **Save time and money across projects.** Because this is such a familiar and in-demand component, developers across federal agencies are spending time building custom implementations of the tabs component. Development could be streamlined by introducing a USWDS implementation. 
+- **USWDS can provide guidance for this common pattern.** Additionally, USWDS will be able to provide guidance on when builders should use tabs, when to consider something else, and additional support by including a component overview page as seen with other components within the library. To help facilitate the introduction of this tabs component, we have included a draft of what may be included in a tabs overview page in this proposal. (See Tabs – Component overview.jpg.zip).
 
-There are a few gaps that the tabs component fills:
-- **Horizontal grouping of related information.** While an Accordion offers vertical grouping of disparate, unrelated content that allows more than one group of content to be opened at once, a tabs component can offer horizontal grouping.
-- Offering users the ability stay in place while alternating between two or more groups of related content.
-- User familiarity and expectations of a tab functionality is not present within any other component.
 
 ### Related laws or policies
 
@@ -44,13 +25,24 @@ N/A
 
 ### Proposed solution
 
-_Thoroughly describe the component and how it addresses the issues outlined in the problem statement._
-- [x] _Add diagrams, images, prototypes, and/or wireframes that visually demonstrate the component._
-- [x] _Describe the component's core functionality. If the component is dynamic, describe its interactive states._
-- [ ] _Identify any proposed variants for this component._
-
 #### Demonstration
-This is a preview of the proposed component: https://demo.badger.wwps.aws.dev/fire-safety-and-emergency-medical-services
+The constructed design file can be found in the following file: [Tabs – Design Demo.fig.zip](https://github.com/uswds/uswds/files/8861618/Tabs.Design.Demo.fig.zip).
+
+To preview the tabs component live in any browser, visit this link: https://demo.badger.wwps.aws.dev/fire-safety-and-emergency-medical-services.
+
+#### Component code
+```html
+<div
+  role="tab"
+  class="tab-style display-inline-block padding-x-2 padding-y-105
+         text-bold font-sans-md"
+  tabindex="0"
+  aria-label="Active Section Tab label" 
+  style="cursor: pointer; white-space: nowrap;"
+>
+Tab label
+</div>
+```
 
 #### States
 
@@ -85,9 +77,8 @@ Displayed when a user is hovering over the selection area. Here is some example 
 ```
 
 #### Variants
-##### Tabs to the side
-
-#### Tabs on top
+- Tabs to the side 
+- Tabs on top
 
 ### Additional context
 [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)
@@ -99,9 +90,7 @@ Displayed when a user is hovering over the selection area. Here is some example 
 
 ### Related components
 
-_Identify if this component is connected to other USWDS components._
-- _Does this component require any other USWDS component to support its common interactions?_
-- _Would this component affect or replace any other USWDS components?_
+N/A
 
 ### Supporting evidence
 
@@ -183,6 +172,9 @@ _Share any alternatives to this component and explain their advantages and disad
 - Arrow key tab functionality
 - Hover state used as a signifier
 
+- In a reimagined experience on va.gov, a veteran relying only on their keyboard will be able to use tabs to compare their healthcare overview from 2022 to the previous year the same way a mouse and keyboard user would.
+- A farmer in rural Ohio who relies on a screen magnifier and a screen reader can identify the farm loan program they are looking for which has been labeled by tabs and are properly displayed and functional when zoomed in at 400%, and read by a screen reader.
+
 #### Accessibility recommendations
 - JAWS and NVDA users find it helpful if all expandable components like accordions and tabs announce their element type (with descriptive naming conventions that allude to the content nested inside of them) to save confusion and enable the element to be predictable, and understood.
 
@@ -202,9 +194,9 @@ _If there are any volunteers who are willing to help design, develop, or test th
 
 ### Contributors
 
-Mazen Kharbutli, Software Development Engineer, AWS
-Miguel Abreu, Software Development Engineer, AWS
-Tanner Bachelor, User Experience Designer, AWS
+- Mazen Kharbutli, Software Development Engineer, AWS
+- Miguel Abreu, Software Development Engineer, AWS
+- Tanner Bachelor, User Experience Designer, AWS
 
 ### Acknowledgements
 
