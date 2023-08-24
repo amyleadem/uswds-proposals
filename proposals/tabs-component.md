@@ -10,7 +10,7 @@ Tabs
 ## Description
 <!-- _Provide a one-sentence description of the component._ -->
 
-Tabs allow users to navigate through individual sections of related content without changing location on the page. 
+Tabs allow users to navigate through individual sections of related content without changing location on the page.
 
 ## Motivation
 <!--
@@ -26,17 +26,19 @@ Tabs are a familiar user pattern that lets users progressively show and hide dig
 Users who have difficulty comprehending large quantities of information at once, or people with learning disorders such as dyslexia may benefit the most from tabbed content. These users will be able to select specific tabs and choose what to read without having to scan the entire content of a page at once. [Needs source/research]
 
 ### What gap does this fill in the Design System?
-USWDS offers an accordion component, which also gives users the ability to show and hide groups of content. However tabs would address the following gaps that the accordion doesn't cover:
+USWDS currently offers an accordion component, which also gives users the ability to show and hide groups of content. However tabs would address the following gaps that the accordion doesn't cover:
 
 - **Tabs allow for horizontal grouping of information.** While the accordion offers vertical grouping of content that allows more than one group of content to be opened at once, a tabs component can offer horizontal grouping.
+- **Tabs allow users to stay in place while navigating sections of content**. Unlike accordion, tabs offer users the ability stay fully in place while alternating between two or more groups of related content.
 - **Tabs allow users to navigate through similarly structured content.** One feature of tabs is that it allows users to move between content and quickly see similarities/differences.  
-- **Tabs allow users to stay in place while navigating sections of content**. Unlike accordion, tabs offers users the ability stay in place while alternating between two or more groups of related content.
+
+<!--Reference: [Tabs vs Accordions (UXDesign.com)](https://uxdesign.cc/little-things-in-ux-design-part-1-tabs-v-s-accordions-47390e4910c3)-->
 
 ### How would this component help teams?
 Tabs are a a very common and familiar user pattern that are used on a range of existing digital experiences. Jakob’s Law of UX states: “Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.” Offering a USWDS tabs component would provide the following benefits:
 
 - **Providing a common tabs component will save time and money across projects.** Because tabs is such a familiar and in-demand component,  federal agencies are spending time designing, building, and testing custom implementations of the tabs component. Development could be streamlined by introducing a USWDS implementation. 
-- **USWDS can provide guidance for this common pattern.** Additionally, USWDS will be able to provide guidance on when builders should use tabs, when to consider something else, and additional support by including a component overview page as seen with other components within the library. To help facilitate the introduction of this tabs component, we have included a draft of what may be included in a tabs overview page in this proposal. (See Tabs – Component overview.jpg.zip).
+- **USWDS can provide guidance for this common pattern.** Additionally, USWDS will be able to provide guidance on when builders should use tabs, when to consider something else, and additional support by including a component overview page as seen with other components within the library. To help facilitate the introduction of this tabs component, we have included a draft of what may be included in a tabs overview page in this proposal. (See [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)).
 
 ## Related laws or policies
 <!-- _Share if there are there are any laws or policies that this component directly supports._-->
@@ -50,28 +52,37 @@ _Thoroughly describe the component and how it addresses the issues outlined in t
 - _Identify any proposed variants for this component._
 -->
 
-### Demonstration
+### Demo
 The constructed design file can be found in the following file: [Tabs – Design Demo.fig.zip](https://github.com/uswds/uswds/files/8861618/Tabs.Design.Demo.fig.zip).
 
-To preview the tabs component live in any browser, visit: https://demo.badger.wwps.aws.dev/fire-safety-and-emergency-medical-services.
+To preview the proposed tabs component live in any browser, visit: https://demo.badger.wwps.aws.dev/fire-safety-and-emergency-medical-services.
 
-### Implementation examples
-<!-- _Provide a list of examples of this component on government (preferred) or non-government sites._-->
-- [GOV.UK design system tabs component](https://design-system.service.gov.uk/components/tabs/)
-- [State.gov home page](https://www.state.gov/)
+> **Note**
+> Our demo environment now reflects all accessibility enhancements and has been independently certified as WCAG 2.1 AA conforming via LevelAccess.
 
 ### Core functionality
+- The tabs component toggles visibility of content in a display frame 
 - Tabs should contain at least two items
-- Users should be able to activate only one tab at a time one
+- Tabs open on the same page
+- Only one tab can be opened at a time one
+- The active tab should be clearly indicated (both visually and in assistive technologies)
 - Tabs should be navigable by click, keyboard, and voice command
-- Tabs should horizontally scroll to prevent content from being cut off
+- Tabs should horizontally scroll to prevent content from being cut off OR tab headers should break to multiple rows
   
 ### Possible variants
 - Tabs to the side 
 - Tabs on top
 - Scrollable
+  
+### Implementation examples
+<!-- _Provide a list of examples of this component on government (preferred) or non-government sites._-->
+- [GOV.UK design system tabs component](https://design-system.service.gov.uk/components/tabs/)
+- [State.gov home page](https://www.state.gov/)
 
-### Component code
+### Sample component code
+<details> 
+  <summary>Sample code</summary>
+  
 ```html
 <div
   role="tab"
@@ -84,49 +95,48 @@ To preview the tabs component live in any browser, visit: https://demo.badger.ww
 Tab label
 </div>
 ```
+</details> 
 
-### States
+### Interactive states
 
 The tab-style css class has three states:
 
-#### Unselected/Inactive
-The state a tab displays when it is not selected, or showing content. 
-<details>
-  <summary>Sample code</summary>
-```CSS
-.tab-style {
-  @include u-text("base", "!important");
-  background-color: transparent !important;
-}
-```
-</details>
+1. Unselected/Inactive: The state a tab displays when it is not selected, or showing content. 
+    <details>
+      <summary>Sample code</summary>
+    ```CSS
+    .tab-style {
+      @include u-text("base", "!important");
+      background-color: transparent !important;
+    }
+    ```
+    </details>
 
-#### Selected/Active
-The state displayed after a user has clicked or tapped a tab which displays only the content belonging to the tab selected.
-<details>
-  <summary>Sample code</summary>
-  ```CSS
-  .tab-style-active {
-    @include u-text("base", "!important");
-    background-color: transparent !important;
-    border-bottom: 3px solid color("base-dark") !important;
-  }
-  ```
-</details>
+2. Selected/Active: The state displayed after a user has clicked or tapped a tab which displays only the content belonging to the tab selected.
+    <details>
+      <summary>Sample code</summary>
+      ```CSS
+      .tab-style-active {
+        @include u-text("base", "!important");
+        background-color: transparent !important;
+        border-bottom: 3px solid color("base-dark") !important;
+      }
+      ```
+    </details>
 
-#### Hover
-Displayed when a user is hovering over the selection area. 
-<details>
-  <summary>Sample code</summary>
-  ```CSS
-  .tab-style:hover {
-    @include u-text("base-dark", "!important");
-    background-color: transparent !important;
-  }
-  ```
-</details>
+3. Hover: Displayed when a user is hovering over the selection area. 
+    <details>
+      <summary>Sample code</summary>
+      ```CSS
+      .tab-style:hover {
+        @include u-text("base-dark", "!important");
+        background-color: transparent !important;
+      }
+      ```
+    </details>
 
-## Related components
+
+## Related USWDS components
 <!--_Identify if this component is connected to other USWDS components._
 - _Does this component require any other USWDS component to support its common interactions?_
 - _Would this component affect or replace any other USWDS components?_-->
@@ -145,46 +155,48 @@ _Share any alternatives to this component and explain their advantages and disad
 ## Usage
 
 ### When to use this component
-<!--_Define the appropriate use case for this component._
-- _What common patterns or interactions does this component support?_-->
-- **If you want to group together two or more sections of related information.**
-- **If your users would benefit from digesting smaller amounts of information at a time.**
-- **If your sections do not have lengthy or complex content.**
+<!--
+_Define the appropriate use case for this component._
+_What common patterns or interactions does this component support?_
+-->
 
-- More information can be found in the [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)
+- **If your users would benefit from digesting smaller amounts of information at a time.**
+- **If you want to group together two or more sections of related information.**
+- **If your sections are content-driven.** In general, tabs should be paired with content-driven components like text, images, or data visualizations.
+
+More information can be found in the [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)
 
 ### When to consider a different component
-- **If you are organizing a large amount of unrelated content.** 
+- **If you are organizing a large amount of unrelated content.**
+- **If your content is highly interactive.** It is not recommended to place other highly interactive components within a tab, or components that are task-driven like forms, data entry, or page-level alerts. For instance, adding an accordion inside of a tab’s content should be avoided. [Need source/research]
 - **If you need site navigation.** Avoid using tabs as navigation to other pages. Instead, use the header component.
+- **If your section labels are long.** Accordions are a better choice if you want to include a lot of text in your section label (Think: FAQs).
 - **If you need to show more than one hidden section at a time.** Instead, use the accordion component.
-- **If more than three tabs are needed.** Consider using an accordion when more than a few tabs will be required. This eliminates the need for horizontal scrolling, which can lead to a poor experience for uses of assistive technologies.
-- **If you need more than one group of hidden content on a page.** In this scenario, consider the accordion component instead.
+- **If more than three tabs are needed.** Consider using an accordion when more than a few tabs will be required. This eliminates the need for horizontal scrolling, which can lead to a poor experience for uses of assistive technologies. [Need source/research]
+- **If you need more than one group of hidden content on a page.** In this scenario, consider the accordion component instead. [Need source/research]
 
-#### Implementation guidance
+### Implementation guidance
 
-- **Provide informative tab labels.**
+- **Provide informative tab labels.** Help users understand what they are opening.
 - **Be strategic when grouping content.** Only use tabs that are similar when it comes to the meaning of the page.
-- **Limit label to few words.** Tab labels should allude to content nested within tab as concisely as possible.
+- **Limit label text to a few words.** Tab labels should allude to content nested within tab as concisely as possible.
 - **Allow entire tab area to be selectable** Allow users to click or tap anywhere in the label area to open a tab and view its content.
-- **Enable horizontal scrolling.** This allows content to be accessible in limited horizontal viewports.
-- **Use similar punctuation between each tab.**
-- **Do not use favicon or icons in tabs.** 
-- **Do not use all caps for tabs labels.** Using caps will shorten your available horizontal space and will demand too much attention from the user.
-- **Place tabs at the top of the module or element where the content is being grouped.** Fix to top of viewport as necessary.
-- **If the number of content items inside a tab is relevant, indicate the number with parentheses.** If tabs are being used to display contnet that is grouped into numerical data sets, it may be helpful to indicate to the user the number of data sets within each tab.
+- **Enable horizontal scrolling.** This allows content to be accessible in limited horizontal viewports. [Need source/research]
+- **Use similar punctuation between each tab.** [Need source/research]
+- **Do not use favicon or icons in tabs.** [Need source/research]
+- **Do not use all caps for tabs labels.** Using caps will shorten your available horizontal space and will demand too much attention from the user. [Need source/research]
+- **Place tabs at the top of the module or element where the content is being grouped.** Fix to top of viewport as necessary. [Need source/research]
+- **If the number of content items inside a tab is relevant, indicate the number with parentheses.** If tabs are being used to display contnet that is grouped into numerical data sets, it may be helpful to indicate to the user the number of data sets within each tab. [Need source/research]
 
-#### Ideal component content
-- In general, tabs should be paired with content-driven components like text, images, or data visualizations.
-- Avoid combining tabs with other components that nest content. For instance, adding an ‘Accordion’ inside of a tab’s content should be avoided.
-- Tabs should be used to group content. It is not recommended to place other highly interactive components within a tab, or components that are task-driven like forms, data entry, or page-level alerts.
-  
 ### Accessibility guidance
-- **Preserve visual tab order.** Tabs should read out in the order they appear in the visual layout.
-- **Label when the tab content is active.** Use an `aria-label` to indicate when the content is selected. 
-- Tabbing to highlight active state
-- Aria-label for screen reader to indicate each tab is a ‘tab panel’, and its name
-- Keyboard interaction: Pressing Enter select the active, highlighted tab panel
-- Arrow key tab functionality
+- **Preserve tab order.** Tabs should be navigable by keyboard in the order they appear in the visual layout.
+- **Identify when the tab content is active.** Use an `aria-label` to indicate when the content is selected. [Technique needs validation]
+- **Design your content with assistive technologies in mind.** Consider the experience of using this component on screen readers, voice command, and with zoom magnification.
+
+### Accessibility considerations
+- JAWS and NVDA users find it helpful if all expandable components like accordions and tabs announce their element type (with descriptive naming conventions that allude to the content nested inside of them) to save confusion and enable the element to be predictable, and understood.
+- The component should be fully navigable by keyboard.
+- Aria-label for screen reader to indicate each tab is a ‘tab panel’, and its name [Need source/research]
 - Hover state used as a signifier
   
 <!--### Key usability considerations
@@ -204,26 +216,24 @@ _Share any alternatives to this component and explain their advantages and disad
 
 ### Risks and potential harm
 <!--
+_Describe the any potential harm that could be caused by this component._
 - _Are there any audiences that might struggle with this component?_
 - _Are there any reasons we should not develop this component?_
 - _How might this component be misused?_
 - _Is this component inaccessible to any assistive technologies? (keyboard navigation, screen readers, zoom magnification, voice command, etc)_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._-->
-- **A team may mistakenly use tabs as a means of site-level navigation.** Tabs should be used only for relating relative content within a page or module.
+
+#### Usability risks
 - **Users might not find content inside of tabs.** Tabs hide content from users, which introduces the risk that users might not notice or read all of the included content.
-- **Tabs add an extra click.** If you know your users will want to see the content, don't hide it behind a tab.
-- A team may mistakenly use tabs as a means to compare content between tabs.
-- **Hiding content can cause users to miss nested information.**
 - **Searching for content can be difficult.** While content nested within tabs can be found in most search engine results, finding this content within a page using keyboard find functionality can prove difficult for some users. This complexity can be alleviated with an in-page search present on pages with tabs that users can use to search for content that may be behind components like an ‘accordion’ or ‘tab’.
+- **Tabs add an extra click.** If you know your users will want to see the content, don't hide it behind a tab.
 
-### Accessibility considerations
-- In a reimagined experience on va.gov, a veteran relying only on their keyboard will be able to use tabs to compare their healthcare overview from 2022 to the previous year the same way a mouse and keyboard user would.
-- A farmer in rural Ohio who relies on a screen magnifier and a screen reader can identify the farm loan program they are looking for which has been labeled by tabs and are properly displayed and functional when zoomed in at 400%, and read by a screen reader.
+#### Implementation risks
+- **A team may mistakenly use tabs as a means to compare content between tabs.** [Need source/research]
+- **A team may mistakenly use tabs as a means of site-level navigation.** Tabs should be used only for relating relative content within a page or module.
 
-- For low-vision users who require a zoom up to 400%, some tabs would appear off-screen even at large viewports, rendering the component unusable. To address this, we implemented a horizontal scroll and ultimately wrapped tab items in divs top to bottom to provide an experience that was more consistent than what we were able to achieve using list items within lists.
-
-#### Accessibility recommendations
-- JAWS and NVDA users find it helpful if all expandable components like accordions and tabs announce their element type (with descriptive naming conventions that allude to the content nested inside of them) to save confusion and enable the element to be predictable, and understood.
+#### Accessibility risks
+- **Content can be cut off at high magnification.** For low-vision users who require a zoom up to 400%, some tabs would appear off-screen even at large viewports, rendering the component unusable. To address this, we implemented a horizontal scroll and ultimately wrapped tab items in divs top to bottom to provide an experience that was more consistent than what we were able to achieve using list items within lists.
 
 ## Stakeholders
 
