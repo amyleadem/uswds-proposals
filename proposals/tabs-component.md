@@ -55,7 +55,7 @@ _Thoroughly describe the component and how it addresses the issues outlined in t
 
 ### Demo
 #### AWS Demo
-The Government Transformation Team (GTT) at Amazon Web Services (AWS) uses USWDS as the principal design system in our open-source application, [Performance Dashboard on AWS](https://aws.amazon.com/solutions/implementations/performance-dashboard-on-aws/). In lieu of a tabs component included within USWDS, we have designed and developed a tabs component by embracing the inclusive design principles and visual guidance from USWDS to meet the needs and expectations of our public sector customers. In this proposal, we provide the design of our tabs component including code, a working demo environment, and design files.
+The Government Transformation Team (GTT) at Amazon Web Services (AWS) uses USWDS as the principal design system in our open-source application, [Performance Dashboard on AWS](https://aws.amazon.com/solutions/implementations/performance-dashboard-on-aws/). In lieu of a tabs component included within USWDS, we have designed and developed a tabs component by embracing the inclusive design principles and visual guidance from USWDS to meet the needs and expectations of our public sector customers. We've included the design of our tabs component including code, a working demo environment, and design files.
 
 The constructed design file can be found in the following file: [Tabs – Design Demo.fig.zip](https://github.com/uswds/uswds/files/8861618/Tabs.Design.Demo.fig.zip).
 
@@ -213,10 +213,10 @@ _Identify the scenarios where this component would not be the appropriate choice
 
 ### ARIA considerations
 - To ensure the operation of a tab is predictable, [ARIA design pattern for tabs](https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-manual.html) is recommended.
-- The tab list should have an aria-label and contain the buttons marked-up with the role of ‘tab’. [Needs confirmation]
-- The tabs should have an ‘aria-controls’ attribute referencing the id of the corresponding tab panel. [Needs confirmation]
+- The tab list should have an `aria-label` and contain the buttons marked-up with the role of `tab`. [Needs confirmation]
+- The tabs should have an `aria-controls` attribute referencing the id of the corresponding tab panel. [Needs confirmation]
 - The `aria-selected` attribute can be used to indicate the selected tab. [Needs confirmation]
-- The role of ‘tabpanel’ should then be used with an ‘aria-labelledby’ referencing the corresponding tab. [Needs confirmation]
+- The role of `tabpanel` should then be used with an `aria-labelledby` referencing the corresponding tab. [Needs confirmation]
 - Users should be able to move focus between tabs using the arrow keys on keyboard. [Needs confirmation]
 
 <!--
@@ -243,7 +243,9 @@ _Describe the any potential harm that could be caused by this component._
 ### Implementation risks
 - **A team may mistakenly use tabs as a means to compare content between tabs.** [Need source/research]
 - **A team may mistakenly use tabs as a means of site-level navigation.** Tabs should be used only for relating relative content within a page or module.
-- **Label text might not be sufficiently descriptive.** Users might not think the tab content is relevant to them. 
+- **Label text might not be sufficiently descriptive.** Users might not think the tab content is relevant to them.
+- **Tabs content can be too interactive or complex.** 
+- **Tabs content can be too interactive or complex.** 
 
 ### Accessibility risks
 - **Content can be cut off with zoom magnification.** For low-vision users who require a zoom up to 400%, some tabs would appear off-screen even at large viewports, rendering the component unusable. To address this, we implemented a horizontal scroll and ultimately wrapped tab items in divs top to bottom to provide an experience that was more consistent than what we were able to achieve using list items within lists.
