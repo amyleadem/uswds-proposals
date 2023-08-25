@@ -15,15 +15,15 @@ Tabs allow users to navigate through individual sections of related content with
 ## Motivation
 <!--
 _Explain the need for this component._
-- _What user need does this component address?_ 
+- _What user need does this component address?_
 - _What audiences would benefit from this component?_
 - _What gap does this component fill in the Design System? How is this different from existing USWDS components?_
 - _What problem does this component solve?_
 -->
 ### How would this component help end users?
-Tabs are a familiar user pattern that lets users progressively show and hide digestible sections of content while staying in place on a page. 
+Tabs are a familiar user pattern that lets users progressively show and hide digestible sections of content while staying in place on a page.
 
-#### What audiences would benefit from this component? 
+#### What audiences would benefit from this component?
 Users who have difficulty comprehending large quantities of information at once, or people with learning disorders such as dyslexia may benefit the most from tabbed content. These users will be able to select specific tabs and choose what to read without having to scan the entire content of a page at once. [Needs source/research]
 
 ### What gap does this fill in the Design System?
@@ -31,7 +31,7 @@ USWDS currently offers an accordion component, which also gives users the abilit
 
 - **Tabs allow for horizontal grouping of information.** While the accordion offers vertical grouping of content that allows more than one group of content to be opened at once, a tabs component can offer horizontal grouping.
 - **Tabs allow users to stay in place while navigating sections of content**. Unlike accordion, tabs offer users the ability stay fully in place while alternating between two or more groups of related content.
-<!-- - **Tabs allow users to navigate through similarly structured content.** One feature of tabs is that it allows users to move between content and quickly see similarities/differences.  
+<!-- - **Tabs allow users to navigate through similarly structured content.** One feature of tabs is that it allows users to move between content and quickly see similarities/differences.
 
 Reference: [Tabs vs Accordions (UXDesign.com)](https://uxdesign.cc/little-things-in-ux-design-part-1-tabs-v-s-accordions-47390e4910c3)-->
 
@@ -39,7 +39,7 @@ Reference: [Tabs vs Accordions (UXDesign.com)](https://uxdesign.cc/little-things
 Tabs are a a very common and familiar user pattern that are used on a range of existing digital experiences. Jakob’s Law of UX states: “Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.” Offering a USWDS tabs component would provide the following benefits:
 
 - **Providing a common tabs component will save time and money across projects.** <!--Because tabs is such a familiar and in-demand component,  federal agencies are spending time designing, building, and testing custom implementations of the tabs component.--> By providing a readily available tabs component within the USWDS, builders will no longer need to spend time to seek out third-party open-source design system components that will fulfill their user needs and expectations. Additionally, an available tabs component will eliminate the costs accrued to design, develop, test, and implement a custom component. [Need to validate that federal agencies are pursuing tabs components]
-- **USWDS can provide guidance for this common pattern.** Additionally, USWDS will be able to provide guidance on when builders should use tabs, when to consider something else, and additional support by including a component overview page as seen with other components within the library. To help facilitate the introduction of this tabs component, we have included a draft of what may be included in a tabs overview page in this proposal. (See [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)). The details are also added to the sections below. 
+- **USWDS can provide guidance for this common pattern.** Additionally, USWDS will be able to provide guidance on when builders should use tabs, when to consider something else, and additional support by including a component overview page as seen with other components within the library. To help facilitate the introduction of this tabs component, we have included a draft of what may be included in a tabs overview page in this proposal. (See [Tabs – Component overview.jpg.zip](https://github.com/uswds/uswds/files/8861616/Tabs.Component.overview.jpg.zip)). The details are also added to the sections below.
 
 ## Related laws or policies
 <!-- _Share if there are there are any laws or policies that this component directly supports._-->
@@ -73,19 +73,19 @@ To preview the proposed tabs component live in any browser, visit: [https://demo
 > - Hover state used as a signifier
 
 ### Core functionality
-- The tabs component toggles visibility of content in a display frame 
+- The tabs component toggles visibility of content in a display frame
 - Tabs should contain at least two items
 - Tabs open on the same page
 - Only one tab can be opened at a time one
 - The active tab should be clearly indicated (both visually and in assistive technologies)
 - Tabs should be navigable by click, keyboard, and voice command
 - Tabs should horizontally scroll to prevent content from being cut off OR tab headers should break to multiple rows
-  
+
 ### Possible variants
-- Tabs to the side 
+- Tabs to the side
 - Tabs on top
 - Scrollable
-  
+
 ## Implementation examples
 <!-- _Provide a list of examples of this component on government (preferred) or non-government sites._-->
 - [GOV.UK design system tabs component](https://design-system.service.gov.uk/components/tabs/)
@@ -98,28 +98,28 @@ To preview the proposed tabs component live in any browser, visit: [https://demo
 N/A
 
 ### Sample component code
-<details> 
+<details>
   <summary>Sample code</summary>
-  
+
 ```html
 <div
   role="tab"
   class="tab-style display-inline-block padding-x-2 padding-y-105
          text-bold font-sans-md"
   tabindex="0"
-  aria-label="Active Section Tab label" 
+  aria-label="Active Section Tab label"
   style="cursor: pointer; white-space: nowrap;"
 >
 Tab label
 </div>
 ```
-</details> 
+</details>
 
 ### Interactive states
 
 The tab-style css class has three states:
 
-1. Unselected/Inactive: The state a tab displays when it is not selected, or showing content. 
+1. Unselected/Inactive: The state a tab displays when it is not selected, or showing content.
     <details>
       <summary>Sample code</summary>
     ```CSS
@@ -142,7 +142,7 @@ The tab-style css class has three states:
       ```
     </details>
 
-3. Hover: Displayed when a user is hovering over the selection area. 
+3. Hover: Displayed when a user is hovering over the selection area.
     <details>
       <summary>Sample code</summary>
       ```CSS
@@ -244,15 +244,15 @@ _Describe the any potential harm that could be caused by this component._
 - **A team may mistakenly use tabs as a means to compare content between tabs.** [Need source/research]
 - **A team may mistakenly use tabs as a means of site-level navigation.** Tabs should be used only for relating relative content within a page or module.
 - **Label text might not be sufficiently descriptive.** Users might not think the tab content is relevant to them.
-- **Tabs content can be too interactive or complex.** 
-- **Tabs content can be too interactive or complex.** 
+- **Tabs content can be too interactive or complex.**
+- **Tabs content can be too interactive or complex.**
 
 ### Accessibility risks
 - **Content can be cut off with zoom magnification.** For low-vision users who require a zoom up to 400%, some tabs would appear off-screen even at large viewports, rendering the component unusable. To address this, we implemented a horizontal scroll and ultimately wrapped tab items in divs top to bottom to provide an experience that was more consistent than what we were able to achieve using list items within lists.
 
 
 ## Unknowns
-### Before approval 
+### Before approval
 <!--_What do we still need to know before approving this proposal?_-->
 - **Mobile presentation is unclear.** We need to figure out how this component will behave in narrow viewports. Here are some possible options:
     - The [AWS demo](https://demo.badger.wwps.aws.dev/fire-safety-and-emergency-medical-services) implements horizontal scroll
@@ -267,7 +267,7 @@ _What do we need to learn when developing this component?_
 ### Key audiences
 _Identify if there are any audiences that have a unique interest in this component._
 - _Which audience is best able to determine if this component is successful?_
-  
+
 ### Volunteers
 _If there are any volunteers who are willing to help design, develop, or test this component, tag them here with details about their roles._
 
