@@ -51,47 +51,45 @@ _Share any alternatives to this component that you considered and explain their 
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 -->
 
-## Usage
-
-### When to use this component
+## When to use this component
 _Define the appropriate use case for this component._
 - _What common patterns or interactions does this component support?_
 - _What does this component need to do to be successful and effective?_
 
-### When to consider a different component
+## When to consider a different component
 _Identify the scenarios where this component would not be the appropriate choice._
 - _What other USWDS components might better support these interactions instead?_
 - _What are common misuses of this type of component?_
 
-### Usability considerations
+## Usability considerations
 _Identify any key usability considerations._
 - _What does this component need to do to be successful and effective?_
 - _What are the characteristics of a successful interaction with this component?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
-### Accessibility considerations
+## Accessibility considerations
 _Identify any key usability considerations._
 - _What does this component need to do to be successful and effective?_
 - _What are the characteristics of a successful interaction with this component?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
-### Risks and potential harm
+## Risks and potential harm
 _Describe the any potential harm that could be caused by this component._
 - _Are there any reasons we should not develop this component?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
-#### Usability risks
+### Usability risks
 _Describe an unsuccessful interaction with this component._
 - _What would make this component less usable?_
 - _How might users struggle to use this component?_
 - _When possible, provide supporting links to research findings or supporting evidence (your own, or other available research)._
 
-#### Implementation risks
+### Implementation risks
 _Describe possible mistakes teams might make when implementing this component._
 - _What are common pitfalls or implementation mistakes associated with this component?_
 - _How might this component be misused?_
   
-#### Accessibility risks
+### Accessibility risks
 _Describe how this component might become inaccessible._
 - _Will users of assistive technologies struggle with this component? List any potential risks for users of keyboard navigation, screen readers, zoom magnification, voice command, etc._
 - _Are there any audiences that might struggle with this component?_
