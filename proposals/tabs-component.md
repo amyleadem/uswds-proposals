@@ -250,6 +250,18 @@ _Describe the any potential harm that could be caused by this component._
 ### Accessibility risks
 - **Content can be cut off with zoom magnification.** For low-vision users who require a zoom up to 400%, some tabs would appear off-screen even at large viewports, rendering the component unusable. To address this, we implemented a horizontal scroll and ultimately wrapped tab items in divs top to bottom to provide an experience that was more consistent than what we were able to achieve using list items within lists.
 
+
+## Unknowns
+### Before approval 
+<!--_What do we still need to know before approving this proposal?_-->
+- **Mobile presentation is unclear.** We need to figure out how this component will behave in narrow viewports. Here are some possible options:
+    - The [AWS demo](https://demo.badger.wwps.aws.dev/fire-safety-and-emergency-medical-services) implements horizontal scroll
+    - [State.gov](https://www.state.gov/) converts their tabs into accordions
+    - [GOV.UK](https://design-system.service.gov.uk/components/tabs/) stacks tab content
+
+### After approval
+_What do we need to learn when developing this component?_
+
 ## Stakeholders
 
 ### Key audiences
