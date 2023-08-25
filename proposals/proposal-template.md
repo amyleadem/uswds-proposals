@@ -11,7 +11,7 @@ More information about contributing to USWDS can be found on the contribution pa
 https://designsystem.digital.gov/about/contribute/
  -->
 
-## Component name(s)
+## Component name
 _Provide the potential name (or names) for this component._
 - _Does this component have a common name?_
 - _Are there other existing names for this component?_
