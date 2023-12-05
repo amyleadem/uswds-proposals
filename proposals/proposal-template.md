@@ -26,8 +26,8 @@ _Explain the need for this component._
 - _What gap does this component fill in the Design System? How is this different from existing USWDS components?_
 - _What problem does this component solve?_
 
-## Related laws or policies
-_Share if there are any laws or policies that this component directly supports._
+## Related laws, guidance, or policies
+_Share if there are any laws, guidance, or policies that this component directly supports._
 
 ## Proposed design
 _Thoroughly describe the component._
