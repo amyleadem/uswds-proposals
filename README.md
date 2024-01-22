@@ -1,6 +1,6 @@
 # USWDS proposals
 
-> **Note**
+> [!Important]
 > At this time, we are accepting proposals only for new components. 
 >
 > You can submit requests for new features or enhancements by [creating an issue](https://github.com/uswds/uswds/issues/new/choose) in the uswds repo.
