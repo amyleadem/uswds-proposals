@@ -1,6 +1,10 @@
 title: "Component proposal: [Component name]"
 labels: ["Status: Discussion started", "Type: New component"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        # About this component
   - type: textarea
     id: name
     attributes:
