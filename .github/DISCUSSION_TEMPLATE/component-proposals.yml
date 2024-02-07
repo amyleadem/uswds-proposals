@@ -4,20 +4,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Component name
+        ## About the component
   - type: textarea
     id: name
     attributes:
-      label: Share the common name for this component. Include any alternative component names.
-      description:
+      label: Component name
+      description: "Share the common name for this component. Include any alternative component names."
       value:
       render: bash
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Component description
   - type: textarea
     id: description
     attributes:
@@ -27,29 +23,21 @@ body:
       render: bash
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Design system need
   - type: textarea
     id: need
     attributes:
-      label: Explain the need for this component
+      label: Design system need
+      description: "Explain the need for this component."
+      value:
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Additional info
       description:
       value:
       render: bash
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Additional information
-  - type: textarea
-    id: need
-    attributes:
-      label: Share any other information
-      description:
-      value:
-      render: bash
-    validations:
-      required: false
