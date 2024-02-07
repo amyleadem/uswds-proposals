@@ -9,7 +9,8 @@ body:
     id: name
     attributes:
       label: Component name
-      description: "Share the common name for this component. Include any alternative component names."
+      description: |
+        Share the common name(s) for this component.
       value:
       render: bash
     validations:
@@ -40,4 +41,4 @@ body:
       value:
       render: bash
     validations:
-      required: true
+      required: false
