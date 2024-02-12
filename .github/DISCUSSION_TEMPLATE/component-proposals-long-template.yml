@@ -29,10 +29,8 @@ body:
       label: 'Design system need'
       description: |
         Explain the need for this component.
-          - What key interaction or user pattern does this component support? 
           - What gap does this component fill in the Design System? How is this different from existing USWDS components?
-          - What problem does this component solve?
-          - Does this component directly support any  federal laws, guidance,  or policies?
+          - Does this component directly support any federal laws, guidance,  or policies?
       value:
     validations:
       required: true
@@ -59,7 +57,7 @@ body:
   - type: textarea
     id: when_to_use
     attributes:
-      label: Component usage
+      label: When to use this component
       description: |
         Define the appropriate use cases for this component.
           - What common interactions does this component support?
@@ -71,7 +69,7 @@ body:
   - type: textarea
     id: when_to_not_use
     attributes:
-      label: Component usage
+      label: When to consider something else
       description: |
         Identify the scenarios where this component would not be the appropriate choice.
           - What are common misuses of this type of component?
@@ -91,7 +89,6 @@ body:
       description: |
         Identify any key usability considerations.
           - What does this component need to do to be successful and effective?
-          - What are the characteristics of a successful interaction with this component?
           - What would make this component less usable?
           - What are common pitfalls or implementation mistakes associated with this component?
       value:
@@ -103,8 +100,7 @@ body:
       label: Accessibility considerations
       description: |
         Identify any key accessibility considerations.
-          - Will users of any assistive technologies struggle with this component? List any potential risks for users of keyboard navigation, screen readers, zoom magnification, voice command, etc.
-          - Are there any audiences that might struggle with this component? 
+          - Will users of any assistive technologies struggle with this component?
           - Describe how this component might become inaccessible.
       value:
     validations:
