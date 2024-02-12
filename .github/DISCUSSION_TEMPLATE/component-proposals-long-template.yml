@@ -60,7 +60,15 @@ body:
     id: usage
     attributes:
       label: Component usage
-      description: Define the appropriate use cases for this component and identify the scenarios where this component would not be the appropriate choice.
+      description: |
+        Define the appropriate use cases for this component.
+          - What common interactions does this component support?
+          - What does this component need to do to be successful and effective?
+          - What kind of content would be ideal for this component?
+        Identify the scenarios where this component would not be the appropriate choice.
+          - What are common misuses of this type of component?
+          - Are there similar interactions that would be better supported by other components?
+          - What kind of content should not be added to this component?
       value:
     validations:
       required: false
@@ -74,7 +82,10 @@ body:
       label: Usability considerations
       description: |
         Identify any key usability considerations.
-        When possible, provide supporting links to research findings or supporting evidence (your own or other research).
+          - What does this component need to do to be successful and effective?
+          - What are the characteristics of a successful interaction with this component?
+          - What would make this component less usable?
+          - What are common pitfalls or implementation mistakes associated with this component?
       value:
     validations:
       required: false
@@ -84,7 +95,9 @@ body:
       label: Accessibility considerations
       description: |
         Identify any key accessibility considerations.
-        When possible, provide supporting links to research findings or supporting evidence (your own or other research).
+          - Will users of any assistive technologies struggle with this component? List any potential risks for users of keyboard navigation, screen readers, zoom magnification, voice command, etc.
+          - Are there any audiences that might struggle with this component? 
+          - Describe how this component might become inaccessible.
       value:
     validations:
       required: false
@@ -97,8 +110,8 @@ body:
     attributes:
       label: Volunteers and endorsements
       description: |
-        Tag any volunteers who are willing to help design, develop, or test this component. 
-        If there is significant support from a given agency or group, include their names here and tag any stakeholders.
+        Volunteers: Tag any volunteers who are willing to help design, develop, or test this component. 
+        Endorsements: If there is significant support from a given agency or group, include their names here and tag any stakeholders.
       value:
     validations:
       required: false
