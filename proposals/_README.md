@@ -5,7 +5,7 @@
     1. **Create a new branch.**
        [Create a new branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
        for the proposal named: `[your initials]-component-[proposed component name]`.
-       For example, if Jane Doe was creating a proposal is for a loader component, the branch would be named `jd-component-loader`.
+       For example, if Jane Doe was creating a proposal for a loader component, the branch would be named `jd-component-loader`.
     1. **Create a new proposal file.** In your new branch, create a file in the `/proposals` directory called `component-[component name].md`.
        For example, `component-loader.md`.
     1. **Copy the proposal template.** Copy the contents of `proposal-template.md` into this file.
