@@ -7,12 +7,11 @@ body:
         # About this component
         Share information about the component you'd like to include in USWDS.
         The goal of this discussion is to build out the information needed to complete the [proposal template](http://www.github.com).
-        ## Component name
   - type: input
     id: name
     attributes:
-      label: 'Share the common name(s) for this component.'
-      description:
+      label: Component name
+      description: "Share the common name(s) for this component."
       value:
     validations:
       required: true
