@@ -14,7 +14,6 @@ body:
       description: |
         Share the common name(s) for this component.
       value:
-      render: bash
     validations:
       required: true
   - type: textarea
@@ -23,7 +22,6 @@ body:
       label: '1.2 Component description'
       description: "Provide a short description of the component."
       value:
-      render: bash
     validations:
       required: true
   - type: textarea
@@ -32,7 +30,6 @@ body:
       label: '1.3 Design system need'
       description: "Explain the need for this component."
       value:
-      render: bash
     validations:
       required: true
   - type: textarea
@@ -41,7 +38,6 @@ body:
       label: '1.4 Component design'
       description: Give a detailed description of the functionality of the component.
       value:
-      render: bash
     validations:
       required: false
   - type: textarea
@@ -50,7 +46,6 @@ body:
       label: '1.5 Implementation examples'
       description:
       value:
-      render: bash
     validations:
       required: false
   - type: markdown
@@ -63,7 +58,6 @@ body:
       label: Component usage
       description: Define the appropriate use cases for this component and identify the scenarios where this component would not be the appropriate choice.
       value:
-      render: bash
     validations:
       required: false
   - type: markdown
@@ -78,7 +72,6 @@ body:
         Identify any key usability considerations.
         When possible, provide supporting links to research findings or supporting evidence (your own or other research).
       value:
-      render: bash
     validations:
       required: false
   - type: textarea
@@ -89,7 +82,6 @@ body:
         Identify any key accessibility considerations.
         When possible, provide supporting links to research findings or supporting evidence (your own or other research).
       value:
-      render: bash
     validations:
       required: false
   - type: markdown
@@ -103,6 +95,5 @@ body:
       description:
       value: |
         Identify any key usability considerations. When possible, provide supporting links to research findings or supporting evidence (your own or other research).
-      render: bash
     validations:
       required: false
