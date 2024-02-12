@@ -57,7 +57,7 @@ body:
       value: |
         # Usage
   - type: textarea
-    id: usage
+    id: when_to_use
     attributes:
       label: Component usage
       description: |
@@ -65,6 +65,14 @@ body:
           - What common interactions does this component support?
           - What does this component need to do to be successful and effective?
           - What kind of content would be ideal for this component?
+      value:
+    validations:
+      required: false
+  - type: textarea
+    id: when_to_not_use
+    attributes:
+      label: Component usage
+      description: |
         Identify the scenarios where this component would not be the appropriate choice.
           - What are common misuses of this type of component?
           - Are there similar interactions that would be better supported by other components?
