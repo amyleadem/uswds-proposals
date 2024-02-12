@@ -1,4 +1,4 @@
-### How to create and submit a new proposal
+# How to create and submit a new proposal
 
 1. **First, find out if a proposal for this idea already exists.**
 1. **If a proposal doesn't exist, it's time to create one.** Here are the steps:
