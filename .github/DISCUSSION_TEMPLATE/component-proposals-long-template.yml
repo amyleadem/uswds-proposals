@@ -28,9 +28,8 @@ body:
     attributes:
       label: 'Design system need'
       description: |
-        Explain the need for this component.
-          - What gap does this component fill in the Design System? How is this different from existing USWDS components?
-          - Does this component directly support any federal laws, guidance,  or policies?
+        What gap does this component fill in the Design System? How is this different from existing USWDS components?
+        Does this component directly support any federal laws, guidance,  or policies?
       value:
     validations:
       required: true
@@ -60,9 +59,6 @@ body:
       label: When to use this component
       description: |
         Define the appropriate use cases for this component.
-          - What common interactions does this component support?
-          - What does this component need to do to be successful and effective?
-          - What kind of content would be ideal for this component?
       value:
     validations:
       required: false
@@ -72,9 +68,6 @@ body:
       label: When to consider something else
       description: |
         Identify the scenarios where this component would not be the appropriate choice.
-          - What are common misuses of this type of component?
-          - Are there similar interactions that would be better supported by other components?
-          - What kind of content should not be added to this component?
       value:
     validations:
       required: false
@@ -88,9 +81,7 @@ body:
       label: Usability considerations
       description: |
         Identify any key usability considerations.
-          - What does this component need to do to be successful and effective?
-          - What would make this component less usable?
-          - What are common pitfalls or implementation mistakes associated with this component?
+        What are common pitfalls or implementation mistakes associated with this component?
       value:
     validations:
       required: false
@@ -100,8 +91,7 @@ body:
       label: Accessibility considerations
       description: |
         Identify any key accessibility considerations.
-          - Will users of any assistive technologies struggle with this component?
-          - Describe how this component might become inaccessible.
+        Will users of any assistive technologies struggle with this component?
       value:
     validations:
       required: false
