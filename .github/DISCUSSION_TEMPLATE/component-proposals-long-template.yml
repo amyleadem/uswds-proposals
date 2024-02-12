@@ -90,9 +90,10 @@ body:
   - type: textarea
     id: stakeholders
     attributes:
-      label: Volunteers, contributors, and endorsements
-      description:
-      value: |
-        Identify any key usability considerations. When possible, provide supporting links to research findings or supporting evidence (your own or other research).
+      label: Volunteers and endorsements
+      description: |
+        Tag any volunteers who are willing to help design, develop, or test this component. 
+        If there is significant support from a given agency or group, include their names here and tag any stakeholders.
+      value:
     validations:
       required: false
