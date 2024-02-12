@@ -7,7 +7,7 @@ body:
         # About this component
         Share information about the component you'd like to include in USWDS.
         The goal of this discussion is to build out the information needed to complete the [proposal template](http://www.github.com).
-  - type: input
+  - type: textarea
     id: name
     attributes:
       label: Component name
@@ -19,7 +19,7 @@ body:
     id: description
     attributes:
       label: 'Component description'
-      description: "Provide a short description of the component."
+      description: Describe the component in one sentence.
       value:
     validations:
       required: true
@@ -27,7 +27,12 @@ body:
     id: need
     attributes:
       label: 'Design system need'
-      description: "Explain the need for this component."
+      description: |
+        Explain the need for this component.
+          - What key interaction or user pattern does this component support? 
+          - What gap does this component fill in the Design System? How is this different from existing USWDS components?
+          - What problem does this component solve?
+          - Does this component directly support any  federal laws, guidance,  or policies?
       value:
     validations:
       required: true
@@ -43,7 +48,7 @@ body:
     id: implementation
     attributes:
       label: 'Implementation examples'
-      description:
+      description: Provide a list of links to examples of this kind of component on government (preferred) or non-government sites.
       value:
     validations:
       required: false
