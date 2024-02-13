@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # [Component name] proposal
+        # Component proposal: [Component name]
         Share information about the component you'd like to include in USWDS. 
         Only the fields marked with an asterisk (*) are required at this time. The rest can be filled out later.
         [Learn more about component proposal discussions].
