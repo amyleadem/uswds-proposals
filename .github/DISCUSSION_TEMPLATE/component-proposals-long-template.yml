@@ -7,7 +7,7 @@ body:
         # About this component
         Share information about the component you'd like to include in USWDS. 
         Only the fields marked with an asterisk (*) are required at this time. The rest can be filled out later.
-        Learn more about the process [at this link].
+        Learn more about component proposal discussions [at this link].
   - type: textarea
     id: name
     attributes:
