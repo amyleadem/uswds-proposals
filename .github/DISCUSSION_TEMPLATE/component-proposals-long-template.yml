@@ -4,10 +4,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        # About this component
+        # [Component name] proposal
         Share information about the component you'd like to include in USWDS. 
         Only the fields marked with an asterisk (*) are required at this time. The rest can be filled out later.
         [Learn more about component proposal discussions].
+        ## About this component
   - type: textarea
     id: name
     attributes:
@@ -38,7 +39,9 @@ body:
     id: design
     attributes:
       label: 'Component design'
-      description: Describe the functionality of the component. Add diagrams, images, wireframes and/or prototypes that visually demonstrate the component.
+      description: |
+        Describe the functionality of the component. 
+        If available, add diagrams, images, wireframes and/or prototypes that visually demonstrate the component.
       value:
     validations:
       required: false
@@ -101,12 +104,22 @@ body:
       value: |
         # Stakeholders
   - type: textarea
-    id: stakeholders
+    id: volunteers
     attributes:
-      label: Volunteers and endorsements
+      label: Volunteers
       description: |
         Tag any volunteers who are willing to help design, develop, or test this component. 
+      value:
+    validations:
+      required: false
+  - type: textarea
+    id: endorsements
+    attributes:
+      label: Endorsements
+      description: |
         If there is significant support from a given agency or group, include their names here and tag any stakeholders.
       value:
     validations:
       required: false
+
+
