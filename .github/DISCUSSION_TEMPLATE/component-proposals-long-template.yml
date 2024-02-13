@@ -6,7 +6,9 @@ body:
       value: |
         # About this component
         Share information about the component you'd like to include in USWDS.
-        The goal of this discussion is to build out the information needed to complete the [proposal template](http://www.github.com).
+        The questions below will all need to be addressed before the USWDS core team will evaluate the component idea,
+        but only the fields marked with an asterisk are required at this time. 
+        Learn more about the process [at this link].
   - type: textarea
     id: name
     attributes:
@@ -19,7 +21,7 @@ body:
     id: description
     attributes:
       label: 'Component description'
-      description: Describe the component in one sentence.
+      description: Briefly describe the component.
       value:
     validations:
       required: true
@@ -28,8 +30,8 @@ body:
     attributes:
       label: 'Design system need'
       description: |
-        What gap does this component fill in the Design System? How is this different from existing USWDS components?
-        Does this component directly support any federal laws, guidance,  or policies?
+        What gap does this component fill in the Design System?
+        Does this component directly support any federal laws, guidance, or policies?
       value:
     validations:
       required: true
@@ -37,7 +39,7 @@ body:
     id: design
     attributes:
       label: 'Component design'
-      description: Give a detailed description of the functionality of the component.
+      description: Describe the functionality of the component. Add diagrams, images, wireframes and/or prototypes that visually demonstrate the component.
       value:
     validations:
       required: false
@@ -81,7 +83,7 @@ body:
       label: Usability considerations
       description: |
         Identify any key usability considerations.
-        What are common pitfalls or implementation mistakes associated with this component?
+        Are there any common pitfalls or implementation mistakes associated with this component?
       value:
     validations:
       required: false
@@ -104,8 +106,8 @@ body:
     attributes:
       label: Volunteers and endorsements
       description: |
-        Volunteers: Tag any volunteers who are willing to help design, develop, or test this component. 
-        Endorsements: If there is significant support from a given agency or group, include their names here and tag any stakeholders.
+        Tag any volunteers who are willing to help design, develop, or test this component. 
+        If there is significant support from a given agency or group, include their names here and tag any stakeholders.
       value:
     validations:
       required: false
