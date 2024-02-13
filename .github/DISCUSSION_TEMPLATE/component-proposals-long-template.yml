@@ -6,8 +6,7 @@ body:
       value: |
         # About this component
         Share information about the component you'd like to include in USWDS.
-        The questions below will all need to be addressed before the USWDS core team will evaluate the component idea,
-        but only the fields marked with an asterisk are required at this time. 
+        Only the fields marked with an asterisk (*) are required at this time.
         Learn more about the process [at this link].
   - type: textarea
     id: name
