@@ -5,9 +5,9 @@ body:
     attributes:
       value: |
         # Component proposal: [Component name]
-        Share information about the component you'd like to include in USWDS. 
+        Thanks for starting a discussion to suggest a new component for the U.S. Web Design System (USWDS). 
         </p><p>
-        We ask for a lot of detail, but it’s okay to start with basic information. Only the fields marked with an asterisk (*) are required at this time. You can work with the community to add more detail over time.
+        Any component suggestion should address the categories below before the USWDS core team will evaluate it. It helps if you link to supporting evidence and research wherever you can. We ask for a lot of detail, but it’s okay to start with basic information &mdash; only the fields marked with an asterisk (*) are required at this time. You can work with the community to add more detail over time.
         </p><p>
         <a href="https://github.com/uswds/uswds/discussions/5764">Learn more about the component proposal process</a>.
         <h2>About this component</h2>
@@ -15,7 +15,8 @@ body:
     id: name
     attributes:
       label: Component name
-      description: "Share the common name (or names) for this component."
+      description: |
+        Share the common name (or names) for this component.
       value:
     validations:
       required: true
@@ -23,7 +24,8 @@ body:
     id: description
     attributes:
       label: 'Component description'
-      description: Briefly describe the component.
+      description: |
+        Briefly describe the component.
       value:
     validations:
       required: true
@@ -41,7 +43,7 @@ body:
     attributes:
       label: 'How the component works'
       description: |
-        Include any interactive states and variants. Diagrams, images, wireframes, and prototypes can help you make your case.
+        Describe how the component works. Include any interactive states and variants. Diagrams, images, wireframes, and prototypes can help you make your case.
       value:
     validations:
       required: false
@@ -59,7 +61,7 @@ body:
     attributes:
       label: When to use this component and when to consider something else
       description: |
-        For example, what kind of content works best with this component, and what kind of content would work poorly with it? What are common misuses of this type of component?
+        What kind of content works best with this component, and what kind of content would work poorly with it? What are common misuses of this type of component?
       value:
     validations:
       required: false
