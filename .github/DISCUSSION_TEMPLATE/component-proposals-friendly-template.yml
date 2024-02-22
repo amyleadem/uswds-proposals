@@ -5,15 +5,14 @@ body:
     attributes:
       value: |
         # Component proposal: [Component name]
-        Share information about the component you'd like to include in USWDS.
-        Only the fields marked with an asterisk (*) are required at this time. The rest can be filled out later.
-        [Learn more about component proposal discussions].
+        Share information about the component you'd like to include in USWDS. We ask for a lot of detail, but it’s okay to start with basic information — whatever you have available. Only the fields marked with an asterisk (*) are required at this time. You can work with the community to add more detail over time.
+        [Learn more about component proposal discussions here](https://github.com/uswds/uswds/discussions/5764).
         ## About this component
   - type: textarea
     id: name
     attributes:
       label: Component name
-      description: "Share the common name(s) for this component."
+      description: "Share the common name (or names) for this component."
       value:
     validations:
       required: true
@@ -30,8 +29,7 @@ body:
     attributes:
       label: 'Why USWDS needs this component'
       description: |
-        Include key interactions, current gaps in USWDS, and the problems this component solves.
-        Explain how the component supports federal laws, guidance, or policies.
+        Include key interactions, current gaps in USWDS, and the problems this component solves. Explain how the component supports federal laws, guidance, or policies.
       value:
     validations:
       required: true
@@ -40,8 +38,7 @@ body:
     attributes:
       label: 'How the component works'
       description: |
-        Include any interactive states and variants.
-        Diagrams, images, wireframes, and prototypes can help you make your case.
+        Include any interactive states and variants. Diagrams, images, wireframes, and prototypes can help you make your case.
       value:
     validations:
       required: false
@@ -49,7 +46,8 @@ body:
     id: implementation
     attributes:
       label: 'Real-life examples'
-      description: Link to examples of other sites — preferably government sites — that use this kind of component.
+      description: |
+        Link to examples of other sites — preferably government sites — that use this kind of component.
       value:
     validations:
       required: false
@@ -62,8 +60,7 @@ body:
     attributes:
       label: When to use this component and when to consider something else
       description: |
-        For example, what kind of content works best with this component, and what kind of content would work poorly with it?
-        What are common misuses of this type of component?
+        For example, what kind of content works best with this component, and what kind of content would work poorly with it? What are common misuses of this type of component?
       value:
     validations:
       required: false
@@ -76,8 +73,7 @@ body:
     attributes:
       label: Usability considerations
       description: |
-        Include conditions that would make this component more usable or less usable.
-        Also include common pitfalls or implementation mistakes associated with this component.
+        Include conditions that would make this component more usable or less usable. Also include common pitfalls or implementation mistakes associated with this component.
       value:
     validations:
       required: false
@@ -86,9 +82,7 @@ body:
     attributes:
       label: Accessibility considerations
       description: |
-        Include how this component interacts with assistive technologies such as keyboard navigation, screen readers, zoom magnification, and voice command.
-        Are there audiences that might struggle with this component?
-        How might the component become inaccessible?
+        Include how this component interacts with assistive technologies such as keyboard navigation, screen readers, zoom magnification, and voice command. Are there audiences that might struggle with this component? How might the component become inaccessible?
       value:
     validations:
       required: false
@@ -101,10 +95,7 @@ body:
     attributes:
       label: Who’s involved
       description: |
-        Please tag volunteers who may be willing to help design, develop or test this component.
-        Note agencies that can offer significant support for the component, and tag any stakeholders.
-        Be sure to share a list of those who helped research and prepare this proposal.
-        Include your name and/or GitHub username if you’d like credit as a contributor.
+        Please tag volunteers who may be willing to help design, develop or test this component. Note agencies that can offer significant support for the component, and tag any stakeholders. Be sure to share a list of those who helped research and prepare this proposal. Include your name and/or GitHub username if you’d like credit as a contributor.
       value:
     validations:
       required: false
