@@ -5,9 +5,9 @@ body:
     attributes:
       value: |
         # Component proposal: [Component name]
-        Thanks for starting a discussion to suggest a new component for the U.S. Web Design System (USWDS). 
+        Thanks for sharing your suggestion for a new component for the U.S. Web Design System (USWDS). 
         </p><p>
-        Any component suggestion should address the categories below before the USWDS core team will evaluate it. It helps if you link to supporting evidence and research wherever you can. We ask for a lot of detail, but it’s okay to start with basic information &mdash; only the fields marked with an asterisk (*) are required at this time. You can work with the community to add more detail over time.
+        We ask for a lot of detail, but it’s okay to start with basic information &mdash; only the fields marked with an asterisk (*) are required at this time. You can work with the community to add more detail over time. It helps if you link to supporting evidence and research wherever you can. 
         </p><p>
         <a href="https://github.com/uswds/uswds/discussions/5764">Learn more about the component proposal process</a>.
         <h2>About this component</h2>
