@@ -5,7 +5,10 @@ body:
     attributes:
       value: |
         # Component proposal: [Component name]
-        Share information about the component you'd like to include in USWDS. We ask for a lot of detail, but it’s okay to start with basic information — whatever you have available. Only the fields marked with an asterisk (*) are required at this time. You can work with the community to add more detail over time.
+        Share information about the component you'd like to include in USWDS. 
+        </p><p>
+        We ask for a lot of detail, but it’s okay to start with basic information. Only the fields marked with an asterisk (*) are required at this time. You can work with the community to add more detail over time.
+        </p><p>
         [Learn more about component proposal discussions here](https://github.com/uswds/uswds/discussions/5764).
         ## About this component
   - type: textarea
@@ -51,12 +54,8 @@ body:
       value:
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: |
-        # Usage
   - type: textarea
-    id: when_to__use
+    id: when_to_use
     attributes:
       label: When to use this component and when to consider something else
       description: |
@@ -64,10 +63,6 @@ body:
       value:
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: |
-        # Usability and accessibility
   - type: textarea
     id: usability
     attributes:
@@ -86,10 +81,6 @@ body:
       value:
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: |
-        # Who's involved
   - type: textarea
     id: involved
     attributes:
